@@ -1,0 +1,1 @@
+document.getElementById("uploadFileInput").addEventListener("change", upload_file_to_supabase);

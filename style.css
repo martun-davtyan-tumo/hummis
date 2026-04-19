@@ -1,0 +1,112 @@
+body
+{
+    background-color: #111122;
+}
+
+h1, h2
+{
+    color: #ffffff;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 10vh;
+}
+
+h2
+{
+    font-size: 7vh;
+}
+
+
+button
+{
+    width: 200vh;
+    height: 5vh;
+    background-color: #0f0f4a;
+    border-color: transparent;
+    border-radius: 100vh;
+
+    font-size: 2vh;
+    color: #3399FF;
+}
+
+
+a
+{
+    background-color: #0f0f4a;
+    width: 47vh;
+    height: 13vh;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3399FF;
+    text-align: center;
+    text-decoration-line: none;
+    border-radius: 2vh;
+}
+
+.utools
+{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+
+#presentationPage
+{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+#dynamic
+{
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+}
+
+#uploadFileInputLabel
+{
+    background-color: #0f0f4a;
+    width: 40vh;
+    height: 7vh;
+    font-size: 5vh;
+    text-align: center;
+    border-radius: 2vh;
+    box-shadow: #117799;
+    color: #3399FF;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#uploadFileInputLabel input
+{
+    display: none;
+}
+
+#presentationIframe
+{
+    width: 110vh;
+    height: 65vh;
+}
+
+#backToPresentationsListButton
+{
+    width: 20vh;
+    height: 5vh;
+    border-radius: 2vh;
+}
