@@ -9,6 +9,15 @@ h1, h2
     text-align: center;
 }
 
+h3
+{
+    color: #1a1a3f;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 5dvh;
+    margin-top: 23dvh;
+}
+
 h1
 {
     font-size: 10dvh;
@@ -101,8 +110,8 @@ a
 
 #presentationIframe
 {
-    width: 110dvh;
-    height: 65dvh;
+    width: 150dvh;
+    height: 89dvh;
     border: none;
     overflow: hidden;
 }

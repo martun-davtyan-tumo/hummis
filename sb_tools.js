@@ -5,7 +5,7 @@ async function upload_file_to_supabase(e)
 {
     const file = e.target.files[0];
 
-    const { data, error } = await sb.storage.from("HUMmis").upload(`uploads/${file.name}`, file)
+    const { data, error } = await sb.storage.from("HUMmis").upload(`uploads/${file.name}`, file, {upsert: true})
 
     console.log(data, error);
 }
