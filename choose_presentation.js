@@ -39,19 +39,34 @@ function make_screen_with_presentations_buttons()
     make_buttons_list();
 }
 
+
 async function make_iframe()
 {
     if (!current_presentation_name) return;
 
     const presentationIframe = document.createElement("iframe");
-    const iframe_src = await get_public_url_from_file(current_presentation_name);
-    presentationIframe.src = `https://view.officeapps.live.com/op/embed.aspx?src=${iframe_src}&embedded=true`;
+    const file_url = await get_public_url_from_file(current_presentation_name);
+    const iframe_src = get_iframe_src(file_url);
+    presentationIframe.src = iframe_src;
     presentationIframe.id = "presentationIframe"
 
     dynamic_page.appendChild(presentationIframe);
 
     console.log(presentationIframe.src);
 }
+
+function get_iframe_src(file_url)
+{
+    if (file_url.endsWith(".pptx") || file_url.endsWith(".ppt"))
+    {
+        return `https://view.officeapps.live.com/op/embed.aspx?src=${file_url}&embedded=true`;
+    }
+
+    console.log("FILE: ", file_url);
+
+    return file_url;
+}
+
 
 function make_button_to_list()
 {

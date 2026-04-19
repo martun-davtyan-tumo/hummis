@@ -11,24 +11,24 @@ h1, h2
 
 h1
 {
-    font-size: 10vh;
+    font-size: 10dvh;
 }
 
 h2
 {
-    font-size: 7vh;
+    font-size: 7dvh;
 }
 
 
 button
 {
-    width: 200vh;
-    height: 5vh;
+    width: 100dvh;
+    height: 5dvh;
     background-color: #0f0f4a;
     border-color: transparent;
-    border-radius: 100vh;
+    border-radius: 100dvh;
 
-    font-size: 2vh;
+    font-size: 2dvh;
     color: #3399FF;
 }
 
@@ -36,16 +36,16 @@ button
 a
 {
     background-color: #0f0f4a;
-    width: 47vh;
-    height: 13vh;
-    font-size: 5vh;
+    width: 47dvh;
+    height: 13dvh;
+    font-size: 5dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #3399FF;
     text-align: center;
     text-decoration-line: none;
-    border-radius: 2vh;
+    border-radius: 2dvh;
 }
 
 .utools
@@ -54,7 +54,7 @@ a
     flex-direction: column;
     display: flex;
     align-items: center;
-    gap: 2vh;
+    gap: 2dvh;
 }
 
 
@@ -65,7 +65,7 @@ a
     flex-direction: column;
     display: flex;
     align-items: center;
-    gap: 2vh;
+    gap: 2dvh;
 }
 
 #dynamic
@@ -74,17 +74,17 @@ a
     flex-direction: column;
     display: flex;
     align-items: center;
-    gap: 2vh;
+    gap: 2dvh;
 }
 
 #uploadFileInputLabel
 {
     background-color: #0f0f4a;
-    width: 40vh;
-    height: 7vh;
-    font-size: 5vh;
+    width: 40dvh;
+    height: 7dvh;
+    font-size: 5dvh;
     text-align: center;
-    border-radius: 2vh;
+    border-radius: 2dvh;
     box-shadow: #117799;
     color: #3399FF;
     cursor: pointer;
@@ -98,15 +98,18 @@ a
     display: none;
 }
 
+
 #presentationIframe
 {
-    width: 110vh;
-    height: 65vh;
+    width: 110dvh;
+    height: 65dvh;
+    border: none;
+    overflow: hidden;
 }
 
 #backToPresentationsListButton
 {
-    width: 20vh;
-    height: 5vh;
-    border-radius: 2vh;
+    width: 20dvh;
+    height: 5dvh;
+    border-radius: 2dvh;
 }
