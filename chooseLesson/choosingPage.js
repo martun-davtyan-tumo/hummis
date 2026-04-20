@@ -86,7 +86,7 @@ function make_lesson_button(lesson)
     button.className = "lessonButton";
     button.textContent = lesson.lessonName;
     button.onclick = () => {
-        window.location.href = `../presentationShower/presentationShower.html?url=${lesson.url}`;}; // I think smth like url="////" key
+        window.location.href = `https://martun-davtyan-tumo.github.io/hummis/presentationShower/presentationShower.html?url=${lesson.url}`;}; // I think smth like url="////" key
 
     return button;
 }
