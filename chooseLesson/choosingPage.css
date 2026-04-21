@@ -20,7 +20,7 @@ details
     font-size: 7dvh;
     color: #aaaaaa;
     padding-left: 10vh;
-    display: flex;
+    /* display: flex; */
 }
 
 .lessonButton

@@ -1,33 +1,33 @@
-const obj = [
-        {
-            "sectionName": "Բաժին 1",
-            "chapters":
-                [
-                    {
-                        "chapterName": "Գլուխ 2",
-                        "lessons":
-                            [
-                                {
-                                    "lessonName": "ԱԶԱՏԱԳՐԱԿԱՆ ՇԱՐԺՈՒՄՆԵՐ 17ՐԴ ԴԱՐԻ ԵՐԿՐՈՐԴ ԿԵՍԻՆ ԵՒ 18ՐԴ ԴԱՐՈՒՄ",
-                                    "url": "https://rotxsczdbdglqqjagnwy.supabase.co/storage/v1/object/public/HUMmis/uploads/2_5415924691917379322.pptx_20260420_153948_0000_a1d0f9f9-4804-4012-9594-4d6fe4342882.pptx"
-                                },
+// const obj = [
+//         {
+//             "sectionName": "Բաժին 1",
+//             "chapters":
+//                 [
+//                     {
+//                         "chapterName": "Գլուխ 2",
+//                         "lessons":
+//                             [
+//                                 {
+//                                     "lessonName": "ԱԶԱՏԱԳՐԱԿԱՆ ՇԱՐԺՈՒՄՆԵՐ 17ՐԴ ԴԱՐԻ ԵՐԿՐՈՐԴ ԿԵՍԻՆ ԵՒ 18ՐԴ ԴԱՐՈՒՄ",
+//                                     "url": "https://rotxsczdbdglqqjagnwy.supabase.co/storage/v1/object/public/HUMmis/uploads/2_5415924691917379322.pptx_20260420_153948_0000_a1d0f9f9-4804-4012-9594-4d6fe4342882.pptx"
+//                                 },
 
-                                {
-                                    "lessonName": "ԱՐԵՒՄՏՅԱՆ ՀԱՅԱՍՏԱՆԸ 19ՐԴ ԴԱՐԻ ՍԿԶԲՆԵՐԻՆ ԵՒ ՌՈՒՍ-ԹՈՒՐՔԱԿԱՆ ՊԱՏԵՐԱԶՄՆԵՐԸ",
-                                    "url": "",
-                                },
+//                                 {
+//                                     "lessonName": "ԱՐԵՒՄՏՅԱՆ ՀԱՅԱՍՏԱՆԸ 19ՐԴ ԴԱՐԻ ՍԿԶԲՆԵՐԻՆ ԵՒ ՌՈՒՍ-ԹՈՒՐՔԱԿԱՆ ՊԱՏԵՐԱԶՄՆԵՐԸ",
+//                                     "url": "https://rotxsczdbdglqqjagnwy.supabase.co/storage/v1/object/public/HUMmis/uploads/hp.pptx",
+//                                 },
 
 
-                                {
-                                    "lessonName": "ՀԱՅԱՍՏԱՆԸ 19ՐԴ ԴԱՐԻ 30-40ԱԿԱՆ ԹՎԱԿԱՆՆԵՐԻՆ",
-                                    "url": ""
-                                }
-                            ]
-                    }
-                ]
-        }
+//                                 {
+//                                     "lessonName": "ՀԱՅԱՍՏԱՆԸ 19ՐԴ ԴԱՐԻ 30-40ԱԿԱՆ ԹՎԱԿԱՆՆԵՐԻՆ",
+//                                     "url": "https://rotxsczdbdglqqjagnwy.supabase.co/storage/v1/object/public/HUMmis/uploads/Presentation%2044%20(1)_0ce7a712-88dd-44f5-9bee-937713d96a33.pdf"
+//                                 }
+//                             ]
+//                     }
+//                 ]
+//         }
 
-    ];
+//     ];
 
 
 // parameter section is an object
@@ -91,4 +91,12 @@ function make_lesson_button(lesson)
     return button;
 }
 
-document.body.appendChild(make_section(obj[0]));
+async function make_page()
+{
+    const data = await get_db_json();
+    console.log(data[0]);
+
+    document.body.appendChild(make_section(data[0]));
+}
+
+make_page();
