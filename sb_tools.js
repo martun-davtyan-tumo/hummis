@@ -25,3 +25,18 @@ async function get_public_url_from_file(file_name)
 {
     return sb.storage.from("HUMmis").getPublicUrl(`uploads/${file_name}`).data.publicUrl;
 }
+
+async function get_db_json()
+{
+    const {data, error} = await sb.storage.from("HUMmis").download("uploads/.db.json");
+
+    if (error)
+    {
+        console.log(error);
+        return;
+    }
+
+    const text_db = await data.text();
+
+    return JSON.parse(text_db);
+}
